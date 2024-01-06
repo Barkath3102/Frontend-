@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 2px solid;
+    background-image: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+
+}
+main h2{
+    font-size: 30px;
+    background-image: url(1.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.container{
+    height: 70vh;
+    overflow-y:auto;
+    border: 2px solid;
+    padding-top: 20px;
+    width: 400px;
+    backdrop-filter: blur(20px);
+}
+.search input{
+    width: 250px;
+    padding: 5px;
+    font-size: medium;
+margin: 0px 10px 0px 20px;
+    
+}
+.search button {
+    width: 80px;
+    padding: 6px 0px;
+    border-radius: 20px;
+    border: 2px solid green;
+    background-color: white;
+}
+.search button:hover{
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    cursor:pointer;
+
+}
+
+.list{
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: larger;
+}
+.list ul{
+    padding-left: 10px;
+}
+.list h4{
+    font-size: 20px;
+    background-image: url(1.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+
+}
+.listitem i{
+    margin-top: 10px;
+    margin-left: 20px;
+    /* background-color: white; */
+    color: red;
+}
+.listitem i:hover{  
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 80%;
+}
+.listitem li{
+    margin-left: 20px;
+    list-style-type:disc;
+}

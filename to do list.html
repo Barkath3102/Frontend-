@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todolist.css"> 
+    <script src="https://kit.fontawesome.com/40aec42df1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="container">
+        <h2>To Do List <i class="fa-solid fa-list-ul"></i></h2>
+        <br>
+    <div class="search">
+        <input id="input">
+        <button onclick="add()" id="btn">+Add</button>
+    </div>
+    <div class="list">
+        <ul id="listitem" class="listitem" >
+            <h4>Todays List :</h4>
+            <li id="listshow" style="display:none;">Hello
+                <i class="fa-regular fa-circle-xmark" onclick="Delete(event)"></i>
+            </li>
+        </ul>
+    </div>
+    </div>
+</main>
+
+<script>
+    //selecting ul
+    var listitem=document.getElementById("listitem")
+    var input=document.getElementById("input")
+
+    function add(){
+        var li=document.createElement("li")
+        li.innerHTML=input.value +("<i class='fa-regular fa-circle-xmark' onclick='Delete(event)'></i>")
+        listitem.append(li) 
+        
+    }
+
+    function Delete(event) {
+        // var li=document.getElementsByTagName("li")
+        event.target.parentElement.remove()             //parent element is to remove button parent which is li
+    }
+</script>    
+</body>
+</html>
